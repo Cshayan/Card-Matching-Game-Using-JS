@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Card Match</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="page-heading">Match-The-Cards!</h1>
+
+    <div class="start-text visible">
+        Click to start the game!
+    </div>
+
+    <div id="game-over-text" class="start-text">
+        Game Over
+        <span class="start-text-small">
+            Click to restart
+        </span>
+    </div>
+
+    <div id="won-text" class="start-text ">
+        You Won!
+        <span class="start-text-small">
+            Click to restart
+        </span>
+    </div>
+
+    <div class="game-container">
+        <div class="game-info-container">
+            <div class="game-info">
+                <b>Time Left: </b><span id="time">100</span>
+            </div>
+            <div class="game-info">
+                <b>Flips: </b><span id="flips">0</span>
+            </div>
+        </div>
+
+        <!--Card images goes here-->
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="Images/blue_back.jpg" width="125px" height="175px">
+            </div>
+            <div class="card-front card-face">
+                <img src="Images/5S.jpg" class="card-value" width="125px" height="175px">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="Images/blue_back.jpg" width="125px" height="175px">
+            </div>
+            <div class="card-front card-face">
+                <img src="Images/5S.jpg" class="card-value" width="125px" height="175px">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="Images/blue_back.jpg" width="125px" height="175px">
+            </div>
+            <div class="card-front card-face">
+                <img src="Images/10C.jpg" class="card-value" width="125px" height="175px">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="Images/blue_back.jpg" width="125px" height="175px">
+            </div>
+            <div class="card-front card-face">
+                <img src="Images/10C.jpg" class="card-value" width="125px" height="175px">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="Images/blue_back.jpg" width="125px" height="175px">
+            </div>
+            <div class="card-front card-face">
+                <img src="Images/6S.jpg" class="card-value" width="125px" height="175px">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="Images/blue_back.jpg" width="125px" height="175px">
+            </div>
+            <div class="card-front card-face">
+                <img src="Images/6S.jpg" class="card-value" width="125px" height="175px">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="Images/blue_back.jpg" width="125px" height="175px">
+            </div>
+            <div class="card-front card-face">
+                <img src="Images/7C.jpg" class="card-value" width="125px" height="175px">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="Images/blue_back.jpg" width="125px" height="175px">
+            </div>
+            <div class="card-front card-face">
+                <img src="Images/7C.jpg" class="card-value" width="125px" height="175px">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="Images/blue_back.jpg" width="125px" height="175px">
+            </div>
+            <div class="card-front card-face">
+                <img src="Images/9D.jpg" class="card-value" width="125px" height="175px">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="Images/blue_back.jpg" width="125px" height="175px">
+            </div>
+            <div class="card-front card-face">
+                <img src="Images/9D.jpg" class="card-value" width="125px" height="175px">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="Images/blue_back.jpg" width="125px" height="175px">
+            </div>
+            <div class="card-front card-face">
+                <img src="Images/9H.jpg" class="card-value" width="125px" height="175px">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="Images/blue_back.jpg" width="125px" height="175px">
+            </div>
+            <div class="card-front card-face">
+                <img src="Images/9H.jpg" class="card-value" width="125px" height="175px">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="Images/blue_back.jpg" width="125px" height="175px">
+            </div>
+            <div class="card-front card-face">
+                <img src="Images/KS.jpg" class="card-value" width="125px" height="175px">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="Images/blue_back.jpg" width="125px" height="175px">
+            </div>
+            <div class="card-front card-face">
+                <img src="Images/KS.jpg" class="card-value" width="125px" height="175px">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="Images/blue_back.jpg" width="125px" height="175px">
+            </div>
+            <div class="card-front card-face">
+                <img src="Images/QD.jpg" class="card-value" width="125px" height="175px">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img src="Images/blue_back.jpg" width="125px" height="175px">
+            </div>
+            <div class="card-front card-face">
+                <img src="Images/QD.jpg" class="card-value" width="125px" height="175px">
+            </div>
+        </div>
+    </div>
+    <script src="script.js" async></script>
+</body>
+</html>
